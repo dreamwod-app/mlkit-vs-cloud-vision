@@ -1,3 +1,7 @@
+### Background
+
+Some comparisons for OCR detection on Concept2 rowing machines between Cloud Vision and Flutter MLKit.
+
 ### Requirements
 
 GCP credentials needs to be available on the path. See https://cloud.google.com/vision/docs/before-you-begin
@@ -53,7 +57,9 @@ The issues seem to be around detecting / and s/m.
    B.41.8.
 8. Numbers are seen very differently, for example 2:03.3, 2:075, 2:06,8, etc.
 
-### Outputs
+### Conclusion
+
+Using MLKit is not an option in this case, it's not possible to get a good result.
 
 #### Example 1( Original, Cloud Vision, MLKit)
 
