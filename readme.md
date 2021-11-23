@@ -2,13 +2,13 @@
 
 GCP credentials needs to be available on the path. See https://cloud.google.com/vision/docs/before-you-begin
 
-### Checkout and build
+### Build
 
 ````
 $ go build 
 ````
 
-Example for displaying the identified areas (using Google Cloud Vision):
+### Examples
 
 ```
 $ ./mlkit-vs-cloud-vision vision -image images/example_1.jpg -out output/example_vision_1.jpg
@@ -16,6 +16,8 @@ $ ./mlkit-vs-cloud-vision vision -image images/example_2.jpg -out output/example
 $ ./mlkit-vs-cloud-vision vision -image images/example_3.jpeg -out output/example_vision_3.jpeg
 $ ./mlkit-vs-cloud-vision vision -image images/example_4.jpeg -out output/example_vision_4.jpeg
 ```
+
+#### Areas from cloud vision
 
 Example for drawing identified areas (coordinates from Flutter and MlKit):
 
@@ -28,7 +30,8 @@ $ ./mlkit-vs-cloud-vision draw -image images/example_4.jpeg -out output/example_
 
 ### Results
 
-These are the result on the identified texts between Cloud Vision and Flutter MLKit. Only the content in on
+These are the result on the identified texts between Cloud Vision and Flutter MLKit. Only the content in on the Concept
+2 rowing screen is counted.
 
 | File   |      Cloud Vision      |  Flutter MLKit    |
 |----------|:-------------: |---------------:   |
@@ -48,4 +51,24 @@ The issues seem to be around detecting / and s/m.
 6. Nothing is detected in this image.
 7. Failed to detect some numbers, seems that it has trouble see difference between 3 and B, like 3.41.8 is seen as
    B.41.8.
-8. Numbers are seen very differently, for example 2:03.3, 2:075, 2:06,8, etc. 
+8. Numbers are seen very differently, for example 2:03.3, 2:075, 2:06,8, etc.
+
+### Outputs
+
+#### Example 1( Original, Cloud Vision, MLKit)
+
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_1.jpg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_1.jpg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_1.jpg" width="25%" height="25%" />
+
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_2.jpg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_2.jpg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_2.jpg" width="25%" height="25%" />
+
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_3.jpeg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_3.jpeg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_3.jpeg" width="25%" height="25%" />
+
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_4.jpeg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_4.jpeg" width="25%" height="25%" />
+<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_4.jpeg" width="25%" height="25%" />
