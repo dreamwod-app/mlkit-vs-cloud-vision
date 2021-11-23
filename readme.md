@@ -6,13 +6,14 @@ Some comparisons for OCR detection on Concept2 rowing machines between Cloud Vis
 
 GCP credentials needs to be available on the path. See https://cloud.google.com/vision/docs/before-you-begin
 
-### Build
+### Checkout and Build
 
 ````
+$ git clone git@github.com:dreamwod-app/mlkit-vs-cloud-vision.git
 $ go build 
 ````
 
-### Examples
+### Cloud Vision
 
 ```
 $ ./mlkit-vs-cloud-vision vision -image images/example_1.jpg -out output/example_vision_1.jpg
@@ -21,9 +22,9 @@ $ ./mlkit-vs-cloud-vision vision -image images/example_3.jpeg -out output/exampl
 $ ./mlkit-vs-cloud-vision vision -image images/example_4.jpeg -out output/example_vision_4.jpeg
 ```
 
-#### Areas from cloud vision
+### Draw Areas from MlKit
 
-Example for drawing identified areas (coordinates from Flutter and MlKit):
+Example for drawing identified areas (coordinate files are from Flutter and MlKit):
 
 ```
 $ ./mlkit-vs-cloud-vision draw -image images/example_1.jpg -out output/example_mlkit_1.jpg -coords coords/coords1.txt
@@ -35,7 +36,7 @@ $ ./mlkit-vs-cloud-vision draw -image images/example_4.jpeg -out output/example_
 ### Results
 
 These are the result on the identified texts between Cloud Vision and Flutter MLKit. Only the content in on the Concept
-2 rowing screen is counted.
+2 LCD rowing screen is of interest.
 
 | File   |      Cloud Vision      |  Flutter MLKit    |
 |----------|:-------------: |---------------:   |
@@ -52,7 +53,7 @@ These are the result on the identified texts between Cloud Vision and Flutter ML
 The issues seem to be around detecting / and s/m.
 
 5. Failed to detect a lot of content and some is wrong, for example r71 is detected as r31.
-6. Nothing is detected in this image.
+6. Nothing at all is detected in this image.
 7. Failed to detect some numbers, seems that it has trouble see difference between 3 and B, like 3.41.8 is seen as
    B.41.8.
 8. Numbers are seen very differently, for example 2:03.3, 2:075, 2:06,8, etc.
@@ -61,7 +62,7 @@ The issues seem to be around detecting / and s/m.
 
 Using MLKit is not an option in this case, it's not possible to get a good result.
 
-#### Example 1( Original, Cloud Vision, MLKit)
+#### Examples
 
 |  Name | Original   | Cloud Vision  | MLKit  |
 |---|---|---|---|
