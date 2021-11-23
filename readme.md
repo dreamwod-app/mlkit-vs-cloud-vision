@@ -57,18 +57,9 @@ The issues seem to be around detecting / and s/m.
 
 #### Example 1( Original, Cloud Vision, MLKit)
 
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_1.jpg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_1.jpg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_1.jpg" width="25%" height="25%" />
-
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_2.jpg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_2.jpg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_2.jpg" width="25%" height="25%" />
-
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_3.jpeg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_3.jpeg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_3.jpeg" width="25%" height="25%" />
-
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/images/example_4.jpeg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_vision_4.jpeg" width="25%" height="25%" />
-<img alt="original" src="https://github.com/dreamwod-app/mlkit-vs-cloud-vision/raw/master/output/example_mlkit_4.jpeg" width="25%" height="25%" />
+|  Name | Original   | Cloud Vision  | MLKit  |
+|---|---|---|---|
+|  Example 1 | ![](images/example_1.jpg)  | ![](output/example_vision_1.jpg) | ![](output/example_mlkit_1.jpg)  |
+|  Example 2 | ![](images/example_2.jpg)  | ![](output/example_vision_2.jpg)  |  ![](output/example_mlkit_2.jpg) |
+|  Example 3 | ![](images/example_3.jpeg)  | ![](output/example_vision_3.jpeg)  |  ![](output/example_mlkit_3.jpeg) |
+|  Example 4 | ![](images/example_4.jpeg)  | ![](output/example_vision_4.jpeg)  |  ![](output/example_mlkit_4.jpeg) |
